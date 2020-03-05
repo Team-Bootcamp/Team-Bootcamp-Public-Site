@@ -1,0 +1,243 @@
+/* Variables */
+:root {
+  --headings-font-family: Open Sans, sans-serif;
+  --body-font-family: Open Sans, sans-serif;
+  --body-color: #282828;
+  --primary-color: #6c5ce7;
+  --background-color: #fff;
+  --headline-color: #fff;
+  --content-color: #fff;
+  --content-font-size: 20px;
+  --field-color: #747474;
+  --field-border-color: #DEE4EA;
+  --field-border-radius: 4px;
+  --field-font-weight: 400;
+  --button-color: #ffffff;
+  --button-background-color: #FF6910;
+  --button-border-radius: 4px;
+  --button-font-weight: 700;
+  --disclaimer-color: #888;
+  --disclaimer-font-size: 12px;
+  --copyright-color: #797B81;
+  --copyright-font-size: 14px;
+  --text-shadow: 0 1px 5px rgba(0,0,0,.1);
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  color: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--body-color);
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+h1 {
+  font-size: 2.25em;
+  color: var(--headline-color);
+  margin: 0;
+  margin-bottom: .5em;
+  text-shadow: var(--text-shadow);
+}
+h2 {
+  font-size: 1.75em;
+}
+h4 {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gray-light);
+}
+
+/* Layout */
+
+header {
+  position: relative;
+  width: 100%;
+  background: var(--primary-color);
+  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+  z-index: 1;
+}
+
+header img {
+  vertical-align: middle;
+}
+
+.small-width {
+  max-width: 800px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.medium-width {
+  max-width: 1120px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  background: var(--primary-color);
+  overflow: hidden;
+  z-index: 0;
+  padding-bottom: 30px;
+}
+
+.hero:before {
+  content: "";
+  background: url(https://grewordoftheday.com/wp-content/themes/gre-question-of-the-day/images/waves.svg);
+  background-size: cover;
+  opacity: .05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+span.subhead {
+  color: var(--headline-color);
+  font-size: 1.125em;
+  margin: 0;
+  opacity: .9;
+}
+
+.carousel-cell {
+  display: block;
+  position: relative;
+  margin-right: 40px;
+  border-radius: 5px;
+  width: 600px;
+  height: 454px;
+}
+
+.carousel-cell img {
+  height: auto; 
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.flickity-page-dots {
+  bottom: -30px;
+}
+
+.flickity-page-dots .dot {
+  background: var(--background-color);
+}
+
+.pricing-container {
+  background: var(--background-color);
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+}
+
+.product-title {
+  color: var(--primary-color);
+  font-size: 1.25em;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.product-description {
+  color: var(--body-color);
+  margin: 10px 0;
+}
+
+.price {
+  font: 600 1.75em var(--body-font-family);
+  color: var(--primary-color);
+  margin: 10px 0;
+}
+
+.price .sale {
+  position: relative;
+  font-weight: 400;
+  color: rgba(0,0,0,.2);
+  letter-spacing: -2px;
+}
+
+.price .sale:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid;
+  border-color: #CCC;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.price .savings {
+  font: 600 18px 'proxima-nova',sans-serif;
+  color: #27ae60;
+  letter-spacing: 0;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.product-terms {
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+
+button.buy {
+  display: block;
+  position: relative;
+  background: var(--button-background-color);
+  color: var(--button-color);
+  width: 100%;
+  box-sizing: border-box;
+  padding: .75em;
+  box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.05);
+  border-radius: 5px;
+  font: 600 1em var(--body-font-family);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 150ms;
+  -webkit-transition: all 150ms;
+  margin: 10px 0;
+  border: 0;
+}
+
+button.buy:hover {
+  transform: scale(1.05);
+  transition: all 150ms;
+  -webkit-transition: all 150ms;
+}
+
+.content p {
+  font-size: 1.125em;
+  line-height: 1.75em;
+  margin-block-start: 1.75em;
+  margin-block-end: 1.75em;
+}
+
+.content p:last-child {
+  margin-block-end: 0;
+}
+
+.nav {
+  font: 400 1em var(--body-font-family);
+  margin-right: 2em;
+}
