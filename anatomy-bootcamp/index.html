@@ -287,7 +287,7 @@
             .redirectToCheckout({
               items: items,
               successUrl: DOMAIN + "success.html?session_id={CHECKOUT_SESSION_ID}",
-              cancelUrl: DOMAIN + "canceled.html?session_id={CHECKOUT_SESSION_ID}"
+              cancelUrl: DOMAIN
             })
             .then(handleResult);
         });
