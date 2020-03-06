@@ -102,7 +102,7 @@ header img {
 .hero:before {
   content: "";
   background: url(../images/pattern.svg);
-  background-size: cover;
+  background-repeat: repeat;
   opacity: .05;
   top: 0;
   left: 0;
