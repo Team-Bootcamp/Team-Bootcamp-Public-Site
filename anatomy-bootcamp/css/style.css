@@ -63,6 +63,10 @@ h4 {
 
 /* Layout */
 
+.row {
+  position: relative;
+}
+
 header {
   position: relative;
   width: 100%;
@@ -243,15 +247,21 @@ button.buy:hover {
   margin-right: 2em;
 }
 
+/* Mobile Layout */
+
 @media only screen and (max-width:48em) {
+
   h1 {
     font-size: 1.5em;
   }
+
   .carousel-cell {
     max-width: 100%;
     height: auto;
   }
+
   .pricing-container {
     margin-top: 1em;
   }
+  
 }
