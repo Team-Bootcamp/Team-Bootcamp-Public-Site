@@ -119,27 +119,21 @@ span.subhead {
   opacity: .9;
 }
 
+.main-carousel {
+  margin-bottom: 3.5em;
+}
+
 .carousel-cell {
   display: block;
-  position: relative;
-  margin-right: 40px;
+  position: relative; 
   border-radius: 5px;
-  width: 600px;
-  height: 454px;
+  width: 680px;
 }
 
 .carousel-cell img {
   height: auto; 
   max-width: 100%;
   border-radius: 3px;
-}
-
-.flickity-page-dots {
-  bottom: -30px;
-}
-
-.flickity-page-dots .dot {
-  background: var(--background-color);
 }
 
 .pricing-container {
