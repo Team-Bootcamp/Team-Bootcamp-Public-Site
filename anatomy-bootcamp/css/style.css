@@ -101,7 +101,7 @@ header img {
 
 .hero:before {
   content: "";
-  background: url(https://grewordoftheday.com/wp-content/themes/gre-question-of-the-day/images/waves.svg);
+  background: url(../images/pattern.svg);
   background-size: cover;
   opacity: .05;
   top: 0;
