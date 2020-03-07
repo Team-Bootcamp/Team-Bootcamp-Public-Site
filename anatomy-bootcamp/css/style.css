@@ -97,18 +97,6 @@ header svg {
   background-color: rgba(0, 0, 0, .2);
 }
 
-.box iframe:before {
-  content: 'Loading video...';
-  position: absolute;
-  width: 100%;
-  height: auto;
-  color: #FFF;
-  font: 600 1.75em var(--body-font-family);
-  top: 0;
-  left: 0;
-  z-index:5;
-}
-
 .hero {
   position: relative;
   background: var(--primary-color);
