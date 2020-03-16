@@ -22,9 +22,12 @@ canvas {
   position: absolute;
   top: 0;
   z-index: -1;
+  opacity: .25;
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background: linear-gradient(#6C5CE7 0%, #5545D3 100%);
   overflow: hidden;
@@ -66,6 +69,7 @@ canvas {
   right: 0;
   position: absolute;
   z-index: 0;
+  border-radius: 8px;
 }
 
 .card:hover {
@@ -86,9 +90,9 @@ canvas {
 
 span.card-prehead {
   color: #FFF; 
-  opacity: .8; 
-  font-weight: bold;
-  font-size: 14px; 
+  opacity: .9; 
+  font-size: 14px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -104,6 +108,13 @@ span.card-description {
   opacity: .9; 
   font-size: 14px;
   min-height: 37.71px;
+}
+
+span.card-author {
+  color: #FFF; 
+  opacity: .8; 
+  font-size: 14px;
+  margin-left: 5px;
 }
 
 .card img {
