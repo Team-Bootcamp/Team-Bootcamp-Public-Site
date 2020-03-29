@@ -118,6 +118,10 @@ header svg {
   z-index: 0;
 }
 
+.hero p, .hero a {
+  color: var(--content-color);
+}
+
 span.subhead {
   display: block;
   min-height: 25px;
