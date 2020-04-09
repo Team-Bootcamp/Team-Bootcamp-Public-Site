@@ -1,0 +1,128 @@
+body {
+	background: #F8F8F9;
+}
+.hero {
+	padding: 24px 0;
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, .1);
+}
+span.subhead {
+	line-height: 1.75em;
+}
+
+.large-width {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.video-details {
+	padding: 36px;
+	border: 1px solid #EEE;
+    border-radius: 0px 0px 8px 8px;
+    background: #FFF;
+    border-top: 0;
+    box-sizing: border-box;
+}
+
+.video-details ul li {
+	margin-bottom: 8px;
+}
+
+.question-bank {
+	display: block;
+	padding: 24px;
+	background: #F1F0FC;
+	color: #2F3137;
+	border-radius: 8px;
+	width: 100%;
+}
+
+/* Algolia */
+
+#hits {
+	justify-content: center;
+}
+
+
+.ais-hits {
+	display: flex;
+	flex-direction: row;
+	flex: 0 1 auto;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.ais-search-box {
+	max-width: 100%;
+}
+
+.hit {
+	display: block;
+	width: 350px;
+	min-height: 141px;
+	border: 1px solid #EEE;
+	border-radius: 8px;
+	background: #FFF;
+	padding: 1em;
+	box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.hit:hover {
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 8px;
+	transform: translateY(-1px);
+}
+
+.hit-image .thumbnail-image {
+	background: var(--primary-color);
+	width: 42px;
+	height: 42px;
+	border-radius: 4px;
+	display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.hit-image svg {
+	fill: #FFF;
+	width: 20px;
+	height: 20px;
+}
+
+h3.hit-name {
+	color: #2F3137;
+	font-size: 16px;
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+h1.hit-name {
+	color: #2F3137;
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+span.hit-name {
+	color: #595862;
+	display: block;
+	position: relative;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+
+span.hit-label {
+	color: rgb(64, 192, 87);
+	font-size: 12px;
+	font-weight: 400;
+    margin-right: 8px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 4px 8px;
+    background: rgb(211, 249, 216);
+    border-radius: 4px;
+}
