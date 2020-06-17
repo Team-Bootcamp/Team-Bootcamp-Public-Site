@@ -1,2 +1,2 @@
 RewriteEngine on
-RewriteRule ^anatomy-bootcamp/(.*)$ https://anatomy.teambootcamp.com
+Redirect 301 /anatomy-bootcamp/ https://anatomy.teambootcamp.com
